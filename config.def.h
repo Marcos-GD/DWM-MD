@@ -60,9 +60,9 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *chromium[] = { "chromium", NULL };
-static const char *incvol[]   = {"amixer", "set", "Master", "5%+", NULL};
-static const char *decvol[]   = {"amixer", "set", "Master", "5%-", NULL};
-static const char *mutevol[]  = {"amixer", "set", "Master", "toggle", NULL};
+static const char *incvol[]   = {"volume-control", "5%+", NULL};
+static const char *decvol[]   = {"volume-control", "5%-", NULL};
+static const char *mutevol[]  = {"volume-control", "toggle", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
